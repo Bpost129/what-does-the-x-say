@@ -1,0 +1,1 @@
+const foxImg = document.querySelector('#fox')
