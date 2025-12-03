@@ -7,3 +7,11 @@ foxImg.addEventListener('click', (e) => {
   foxSays.volume = .04
   foxSays.play()
 })
+
+notFoxDiv.addEventListener('click', (e) => {
+  if (e.target.id !== 'not-fox') {
+    const audioEl = new Audio(`../audio/${e.target.id}.mp3`)
+    audioEl.volume = .04
+    audioEl.play()
+  }
+})
